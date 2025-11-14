@@ -1,0 +1,12 @@
+# Virtual Environment
+.venv/
+venv/
+# Qiskit IBM Provider Credentials
+.qiskit/
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+# Python compiled files
+__pycache__/
+*.pyc
+# Logs and data
+*.log
