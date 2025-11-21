@@ -13,7 +13,7 @@ The quantum teleportation protocol was executed on a physical backend with high 
 
 | Metric | Detail |
 |--------|--------|
-| **Target State** | $ |
+| **Target State** | ∣1⟩ |
 | **Execution Backend** | IBM Quantum System (`ibm_fez`) |
 | **Total Shots** | 1024 |
 | **Successful Outcomes** | 979 |
@@ -33,7 +33,7 @@ The teleportation protocol uses a **3-qubit, 3-classical-bit circuit**:
 | **q₁** | Entangled qubit — Alice’s half of the Bell pair ($\lvert \Phi^+ \rangle$). |
 | **q₂** | Receiver qubit — Bob’s half of the Bell pair |
 
-After generating entanglement and performing Alice’s Bell-basis measurement, the classical bits (**c₀**, **c₁**) are used in **conditional operations** (`if_test`) to apply the required **X** and **Z** corrections to **q₂**, restoring the original \(|1\rangle\) state on Bob’s side.
+After generating entanglement and performing Alice’s Bell-basis measurement, the classical bits (**c₀**, **c₁**) are used in **conditional operations** (`if_test`) to apply the required **X** and **Z** corrections to **q₂**, restoring the original ($\lvert 1 \rangle$) state on Bob’s side.
 
 The fully executed circuit and the resulting histogram showing dominant correct outcomes can be viewed in the accompanying notebook.
 
